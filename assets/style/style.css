@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --primary-color: #F0F0F0;
+
+    --primary-bg-color: #2B3040;
+    --secondary-bg-color: #494E60;
+    --border-color: #494E60;
+
+    --title-color: #9A9A9C;
+    --text-color: #9A9A9C; 
+    --link-color: #9A9A9C;
+    --icon-color: #C7C8C9;
+}
+
+
+body{
+    background: var(--primary-bg-color);
+    font-family:'Inter', sans-serif, monospace
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: var(--icon-color);
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.header__brand .brand__logo{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+#toggleTheme{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+}
+
+.menu__item{
+    width: 100vw;
+}
+
+.menu--mobile{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+}
+
+.menu--mobile .menu__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: .5rem;
+}
+
+.menu__icon, .menu__text{
+    color: var(--text-color);
+}
+
+.menu__link.active .menu__icon,
+.menu__link.active .menu__text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.menu__icon{
+    font-size: 1.5rem;
+}
+
+.menu__text{
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+@media(min-width: 768px){
+    .menu--mobile{
+        display: none;
+    }
+}
