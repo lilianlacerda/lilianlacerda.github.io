@@ -6,7 +6,7 @@
     --primary-color: #CBC5D9;
 
     --primary-bg-color: #2B3040;
-    --secondary-bg-color: #5A24A6;
+    --secondary-bg-color: #5a24a642;
     --primary-border-color: #5A24A6;
     --secondary-border-color: #9F96D9;
 
@@ -19,8 +19,8 @@
 :root[data-theme='light'] {
     --primary-color: #152211;
 
-    --primary-bg-color: #E9E9E9;
-    --secondary-bg-color: #8eec74;
+    --primary-bg-color: #E6E6E6;
+    --secondary-bg-color: #5a24a642;
     --primary-border-color: #8eec74;
     --secondary-border-color: #BDF2AE;
 
@@ -286,6 +286,7 @@ main {
 
 .tecnologies__logo {
     height: 2.4rem;
+    border-radius: 10%;
 
 }
 
