@@ -275,7 +275,6 @@ main {
     flex-flow: row wrap;
     gap: .5rem;
 }
-
 .tecnologies__item {
     display: flex;
     flex-direction: row;
