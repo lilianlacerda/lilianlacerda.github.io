@@ -18,7 +18,8 @@ const MyCustomButton = styled("button")(({theme}) => ({
     gap: "10px",
     color: theme.palette.primary.contrastText,
     '&:hover': {
-        backgroundColor: theme.palette.secondary.light
+        backgroundColor: theme.palette.secondary.light,
+        color: theme.palette.secondary.contrastText,
     }
         
     }))
