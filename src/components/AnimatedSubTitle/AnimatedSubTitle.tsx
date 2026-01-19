@@ -34,9 +34,9 @@ const DroppingTexts = styled(Grid)(() =>({
 const AnimatedSubTitle = () => {
     return(
         <>
-            <Grid container spacing={{xs:3}}>
+            <Grid container spacing={{xs:0}}>
                 <Grid size={{xs: 6, md: 8}}>
-                    <Typography color="primary.contrastText" variant="h2" textAlign="center">Developer</Typography>
+                    <Typography color="primary.contrastText" variant="h2" textAlign="center">Building</Typography>
                 </Grid>
                 <Grid size={{xs: 6, md: 4}} marginLeft={{md:"-90px"}}>
                     <DroppingTexts>
@@ -47,10 +47,10 @@ const AnimatedSubTitle = () => {
                         <Typography color="primary.contrastText" variant="h2">Backend</Typography>
                     </div>
                     <div>
-                        <Typography color="primary.contrastText" variant="h2">Database</Typography>
+                        <Typography color="primary.contrastText" variant="h2">Databases</Typography>
                     </div>
                     <div>
-                        <Typography color="#ff6400" fontWeight={"bold"} variant="h2">Solutions!</Typography>
+                        <Typography color="#F4511E" variant="h2">Solutions!</Typography>
                     </div>
                     </DroppingTexts>
                 </Grid>
