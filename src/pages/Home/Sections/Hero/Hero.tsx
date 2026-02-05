@@ -9,15 +9,9 @@ import meuCV from '../../../../assets/pdfs/cv_dev_Lilian_Lacerda.pdf';
 
 const StyledHero = styled("div")(({theme})=>({
         backgroundColor: theme.palette.primary.main,
-        height: "100vh",
+        minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        [theme.breakpoints.up('xs')]: { // <= mobile
-            paddingTop: "100px"
-        },
-        [theme.breakpoints.up('md')]: { // <= desktop
-            paddingTop: "0"
-        }
 }))
 
 const StyledImg = styled("img")(({theme})=>({
@@ -55,7 +49,7 @@ const Hero = () => {
                     <Grid container spacing={2}>
                         <Grid size={{ xs: 12, md: 5 }}>
                             <Box position={"relative"}>
-                                <Box position={"absolute"} width={"150%"} top={-100} right={0}>
+                                <Box position={"absolute"} width={"120%"} top={-100} right={0}>
                                     <AnimatedBackground />
                                 </Box>
                                 <Box position={"relative"} textAlign={"center"}>
