@@ -4,6 +4,9 @@ import AnimationComponent from "../../../../components/AnimationComponent/Animat
 
 const StyledExperience = styled("div")(({theme}) => ({
     backgroundColor: theme.palette.primary.main,
+    minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
 }));
 
 const myProjects = [
@@ -26,11 +29,20 @@ const myProjects = [
         codeURL: "https://github.com/lilianlacerda/lily-calculator", 
     },
     {    
+        title: "Minha Lista de Filmes",
+        subtitle: "Set 2025 - Atualmente",
+        srcImg: "/src/assets/images/catCinema.gif",
+        description: "API REST para curadoria de filmes com integração ao TMDB. O sistema permite buscar títulos, gerenciar listas de interesse e possui um algoritmo de sorteio inteligente ('Me Surpreenda') para sugerir filmes não assistidos. Desenvolvido com foco em boas práticas, tratamento global de exceções e semântica HTTP.",
+        technologies: "Java 17, Spring Boot 3, Spring Security, MySQL, JPA/Hibernate, REST API",
+        websiteURL: "https://github.com/lilianlacerda/movieList",
+        codeURL: "https://github.com/lilianlacerda/movieList", 
+    },
+    {    
         title: "Saúde Diária",
         subtitle: "Set 2025 - Out 2025",
         srcImg: "/src/assets/images/diarioSaude.png",
         description: "Sistema para registro de Sono, Alimentação e Atividade física. Desafio 7 days of Code da Alura. Utilizei conceitos modernos de Java com Spring, Maven, Banco H2 e também tive a oportunidade de conhecer o Thymeleaf!",
-        technologies: "",
+        technologies: "Java 17, Spring Boot 3, Spring Security, MySQL, JPA/Hibernate, REST API, Thymeleaf",
         websiteURL: "https://github.com/lilianlacerda/diario-saude/releases/download/projeto/api-1.0.3-Saude-diaria.jar",
         codeURL: "https://github.com/lilianlacerda/diario-saude", 
     },
