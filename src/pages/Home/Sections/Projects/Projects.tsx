@@ -6,7 +6,7 @@ const StyledExperience = styled("div")(({theme}) => ({
     backgroundColor: theme.palette.primary.main,
     minHeight: "100vh",
     display: "flex",
-    alignItems: "center",
+    alignItems: "flex-start",
 }));
 
 const myProjects = [
@@ -53,8 +53,8 @@ const Projects = () => {
         <>
             <StyledExperience>
                 <Container maxWidth="lg">
-                    <Box id="projects" pt={5} pb={3}>
-                        <Typography variant="h2" textAlign="center" color="primary.contrastText">Projects</Typography>
+                    <Box id="projects" pt={9} pb={3} mb={3}>
+                        <Typography variant="h2" textAlign="center" color="primary.contrastText">Meus Projetos</Typography>
                     </Box>
                     <Grid container spacing={5} pb={3}>
                         {myProjects.map((project: ProjectCardProps, index: number) => (
