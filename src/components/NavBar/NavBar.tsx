@@ -28,7 +28,7 @@ export const StyledDesktopToolbar = styled(Toolbar)(({theme}) => ({
     },
     [theme.breakpoints.up('md')]: {
         display: "flex",
-        justifyContent: "space-eventy", 
+        justifyContent: "center", 
     }
 }));
 
@@ -54,7 +54,7 @@ const NavBar = () =>{
     return(
         <>
             <Box sx={{flexGrow: 1}}>
-                <AppBar position="absolute">
+                <AppBar position="fixed">
                     <StyledMobileToolbar>
                         <IconButton
                             size="large"
@@ -77,26 +77,32 @@ const NavBar = () =>{
                             open={Boolean(anchorEl)}
                             onClose={handleClose}
                         >
+                            <MenuItem onClick={() => handleSmoothScroll("hero")}>
+                                <StyledNavLink>Início</StyledNavLink>
+                            </MenuItem>
                             <MenuItem onClick={() => handleSmoothScroll("about")}>
-                                <StyledNavLink>About</StyledNavLink>
+                                <StyledNavLink>Sobre</StyledNavLink>
                             </MenuItem>
                             <MenuItem onClick={() => handleSmoothScroll("skills")}>
                                 <StyledNavLink>Skills</StyledNavLink>
                             </MenuItem>
                             <MenuItem onClick={() => handleSmoothScroll("projects")}>
-                                <StyledNavLink>Projects</StyledNavLink>
+                                <StyledNavLink>Projetos</StyledNavLink>
                             </MenuItem>                            
                         </Menu>
                     </StyledMobileToolbar>
                     <StyledDesktopToolbar variant="regular">
-                        <MenuItem onClick={() => handleSmoothScroll("about")}>
-                                <StyledNavLink>About</StyledNavLink>
+                            <MenuItem onClick={() => handleSmoothScroll("hero")}>
+                                <StyledNavLink>Início</StyledNavLink>
+                            </MenuItem>
+                            <MenuItem onClick={() => handleSmoothScroll("about")}>
+                                <StyledNavLink>Sobre</StyledNavLink>
                             </MenuItem>
                             <MenuItem onClick={() => handleSmoothScroll("skills")}>
                                 <StyledNavLink>Skills</StyledNavLink>
                             </MenuItem>
                             <MenuItem onClick={() => handleSmoothScroll("projects")}>
-                                <StyledNavLink>Projects</StyledNavLink>
+                                <StyledNavLink>Projetos</StyledNavLink>
                             </MenuItem>          
                     </StyledDesktopToolbar>
                 </AppBar>
