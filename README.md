@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# 🚀 Portfólio Pessoal - Lilian Lacerda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar minha trajetória profissional, minhas habilidades técnicas e os projetos que venho desenvolvendo durante minha transição para a área de Desenvolvimento de Software.
 
-Currently, two official plugins are available:
+> **Status do Projeto:** Em desenvolvimento 🛠️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Principais Funcionalidades:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Timeline Interativa:** Uma linha do tempo personalizada usando Material UI Lab, adaptada para leitura em dispositivos móveis.
+- **Grade de Skills:** Organização entre Hard Skills e Soft Skills com design centralizado.
+- **Responsividade:** Layout adaptável para diferentes tamanhos de tela (Desktop, Tablet e Mobile).
+- **Estilização Temática:** Uso extensivo do `styled components` do Material UI para manter a consistência visual.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+As principais ferramentas usadas na construção deste projeto:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- [React](https://reactjs.org/) - Biblioteca para construção da interface.
+- [Material UI (MUI)](https://mui.com/) - Framework de componentes UI (v6).
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para maior segurança no código.
+- [Vite](https://vitejs.dev/) - Build tool rápida e moderna.
+- [Lucide Icons / MUI Icons](https://mui.com/material-ui/material-icons/) - Conjunto de ícones vetoriais.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[clique aqui para ver o projeto!](https://lilianlacerda.github.io/)
